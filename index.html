@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jamie Graves</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Web Application Development</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#topic1">What is version control</a>
+                    </li>
+                    <li>
+                        <a href="#topic2">Why is it important?</a>
+                    </li>
+                    <li>
+                        <a href="#topic3">Three types of VCS</a>
+                    </li>
+                    <li>
+                        <a href="#topic4">How does it work?</a>
+                    </li>
+                    <li>
+                        <a href="#topic5">Git Basics</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h2>Lesson 3 Highlights</h2>
+                <h3>Jamie Graves</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="topic1">
+            <img class="featurette-image img-circle img-responsive pull-right" src="https://pics.io/landing-assets/img/vc-new/bannerL.png">
+            <h2 class="featurette-heading">What is version control?
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead">Version control is a system that records changes to a file or set of files over time so you can have previous versions of the file available in the future. VCS lets you revert back to previous file or project versions, compare changes to files/projects over time, see who last modified something, and more. Git is the most commonly used VCS now. Before 2002, Linux kernel, a large open source software project that provided file maintenance through patches and archived files. In 2002, Linux kernel began using a free VCS called BitKeeper. Tensions between the community that used BitKeeper and the corporation that created it heightened, causing the creators to make it a paid only service. In 2005, Git was created to be a better, faster, and free version of BitKeeper. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="topic2">
+            <img class="featurette-image img-circle img-responsive pull-left" src="https://thinkadvertisement.com/wp-content/uploads/services-web-services-on-light-500x500.png">
+            <h2 class="featurette-heading">Why is it important?
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead">Version control is an important tool to many developers because it stores all versions of files and projects, allows you to restore previous files and projects, tracks changes, allows for collaboration, and keeps backups. When saving files to a local client, you may overwrite previous versions of files, or when working as a team, share multiple versions of the same file back and forth, leaving room for errors to occur. VCS save all versions of files, so even if you accidentally lose a file or overwrite someone else’s changes, you have every version of the file saved, and can always revert back to a previous version. You can also track all changes made to a file by comparing the current version to any previous version, which can be helpful in debugging. VCS also allows every member of a team to work on any file at any time, and when saved, will merge all the changes into a common version. Each team member also has their own personal mirrored copy of the project, meaning there are multiple backups of the same project available. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="topic3">
+            <img class="featurette-image img-circle img-responsive pull-right" src="https://opmantek.com/wp-content/uploads/2017/09/ICON-DiverseEnvironments.png">
+            <h2 class="featurette-heading">Three types of VCS
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead">There are three types of version control systems: local, centralized, and distributed. Local VCS copy files from your computer to a directory. This, however, can leave you vulnerable to errors because you can end up using the wrong directory or copying the wrong files. Centralized VCS is a single server that contains all the versioned files. This makes group work easy, and allows for greater administrative oversight because you can track what changes are made by who. However, if the main server goes down, no one can work in the project. Distributed VCS allow clients to perfectly mirror a repository, so every clone is a full backup of the data. This allows you to work whenever, wherever, regardless of if you are connected to the internet or not. </p>
+        </div>
+        
+        <hr class="featurette-divider">
+        
+       <!-- Fourth Featurette -->
+        <div class="featurette" id="topic4">
+            <img class="featurette-image img-circle img-responsive pull-left" src="https://rajpurkar.github.io/mlx/recognizing-musical-melodies/rnn-musical.png">
+            <h2 class="featurette-heading">How does it work?
+                <span class="text-muted">r</span>
+            </h2>
+            <p class="lead">Git works by saving files as a stream of snapshots; every time a file is saved, a picture of the new data is taken and stored. Local databases are used, so old versions are easy to pull up, and you can work offline until a connection is made so you can upload the newest version. Once you commit a snapshot, it is hard to lose. There are three main states a file can be in: modified, staged, and committed. A modified file is a file that has been changed, but not saved. In order to save a file, you must stage it first; which is when a modified file in its current version is marked to be committed. A committed file has been successfully saved and stored in the local database. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Fifth Featurette -->
+        <div class="featurette" id="topic5">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://corporategyan.in/wp-content/uploads/2017/11/GIT.jpg">
+            <h2 class="featurette-heading">Git basics
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead">Git is the most popular form of a VCS. In order to create a Git project, or a repository, you can copy over local directory files (using the command cd /c/user/my_project) or clone and existing repository (using command git clone <url>). To start tracking a file, you must use the command git addme. In order to check the status of a file, use the command git status. Commit files by using git commit, and skip the staging phase by using git commit -a. To see what changes have been made, use git diff. The command git rm will remove a file, while git mv file_from file_to will change the name of a file. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2018</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
